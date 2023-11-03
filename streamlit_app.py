@@ -19,7 +19,7 @@ num_turns = st.slider("Number of turns in spiral", 1, 300, 31)
 
 try:
     import streamlit as st
-    st.write('''<div style="border: solid 1px red;"><iframe src="https：//www.thrumbo.com" width="800px" height="600px"></iframe></div>''', unsafe_allow_html=True)
+    st.write('''<div style="border: solid 1px red;"><iframe src="https：//www.baidu.com" width="800px" height="600px"></iframe></div>''', unsafe_allow_html=True)
 except Exception as e:
     st.write(e)
     
