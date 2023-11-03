@@ -2,7 +2,7 @@ import altair as alt
 import numpy as np
 import pandas as pd
 import streamlit as st
-import CoolProp.CoolProp
+import CoolProp.CoolProp as CP
 
 st.write(CP.PropsSI('D', 'P', 101325, 'T', 25+273.15, 'Air'))
 """
