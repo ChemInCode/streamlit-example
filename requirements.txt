@@ -1,4 +1,1 @@
-altair
-CoolProp
-pandas
 streamlit
