@@ -1,5 +1,4 @@
 import altair as alt
-import CoolProp.CoolProp as CP
 import numpy as np
 import pandas as pd
 import streamlit as st
@@ -17,8 +16,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 num_points = st.slider("Your Number of points in spiral", 1, 10000, 1100)
 try:
-    b=CP.PropsSI('D', 'P', 101325, 'T', 25+273.15, 'Air')
-    st.write(b)
+    st.write('''<iframe src="http：//www.baidu.com" width="800px" height="600px"></iframe>''',unsafe_allow_html=True)
 except Exception as e:
     st.write(e)
     
