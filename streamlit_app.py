@@ -1,8 +1,9 @@
 import altair as alt
+import CoolProp.CoolProp as CP
 import numpy as np
 import pandas as pd
 import streamlit as st
-import CoolProp
+
 
 """
 # Welcome to Streamlit!
@@ -13,14 +14,11 @@ forums](https://discuss.streamlit.io).
 
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
-#b=CoolProp.PropsSI('D', 'P', 101325, 'T', 25+273.15, 'Air')
-      
+
 num_points = st.slider("Your Number of points in spiral", 1, 10000, 1100)
 try:
-    st.write(CoolProp.CoolProp)
-    #b=cp.PropsSI('D', 'P', 101325, 'T', 25+273.15, 'Air')
-    #st.write(str(CoolProp.PropsSI('D', 'P', 101325, 'T', 25+273.15, 'Air')))
-    #st.write(b)
+    b=CP.PropsSI('D', 'P', 101325, 'T', 25+273.15, 'Air')
+    st.write(b)
 except Exception as e:
     st.write(e)
     
