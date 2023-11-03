@@ -1,4 +1,4 @@
 altair
-CoolProp
+CoolProp==6.4.3.post1
 pandas
 streamlit
