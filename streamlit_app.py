@@ -3,7 +3,6 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
-
 """
 # Welcome to Streamlit!
 
@@ -16,7 +15,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 num_points = st.slider("Your Number of points in spiral", 1, 10000, 1100)
 try:
-    st.write('''<iframe src="http：//www.baidu.com" width="800px" height="600px"></iframe>''',unsafe_allow_html=True)
+    st.write('''<iframe src="http：//www.baidu.com" width="800px" height="600px"></iframe>''', unsafe_allow_html=True)
 except Exception as e:
     st.write(e)
     
